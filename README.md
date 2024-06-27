@@ -26,12 +26,12 @@ Users should be able to:
 
 ### Screenshot
 
-![screenshot](./assets/images/Screenshots.png)
+![](./assets/images/Screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/cvalencia1991/blog-preview-card)
+- Live Site URL: [Add live site URL here](https://cvalencia1991.github.io/blog-preview-card/)
 
 ## My process
 
@@ -52,6 +52,5 @@ Implement the structure of compiler with the format SASS
 - [sass](https://sass-lang.com/) - This helped me for Implement the structre of sass Compiler 
 
 ## Author
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@cesar valencia](https://www.frontendmentor.io/profile/cvalencia1991)
+- Twitter - [@cesar](https://x.com/cvalenciaguilar)
