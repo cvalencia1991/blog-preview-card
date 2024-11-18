@@ -1,33 +1,32 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  <title>Frontend Mentor | Blog preview card</title>
-</head>
-<body>
-  <main id="main-content" tabindex="-1">
-  <div class="card">
-   <div class="card-information">
-    <figure>
-            <img src="./assets/images/illustration-article.svg" alt="" />
-            <figcaption><strong>Learning</strong></figcaption>
-    </figure>
-    <article>
-     <h2>Published <time datetime="2023-12-21">21 Dec 2023</time></h2>
-     <h1>HTML & CSS foundations</h1>
-     <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
-    </article>
-    <footer>
-     <figure>
-             <img src="./assets/images/image-avatar.webp" alt="avatar"/>
-             <figcaption><strong>Greg Hooper</strong></figcaption>
-     </figure>
-    </footer>
-   </div>
-  </div>
- </main>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Frontend Mentor | Blog Preview Card</title>
+  </head>
+  <body>
+    <main id="main-content" tabindex="-1">
+      <article class="card">
+        <img src="./assets/images/illustration-article.svg" 
+             alt="Illustration showing key concepts for the article" 
+             class="card__blog-image" />
+        <b class="card__learning-tag">Learning</b>
+        <p class="card__learning-date">
+        Published <time datetime="2023-12-21">21 Dec 2023</time>
+        </p>
+        <h1 class="card__heading-primary">HTML & CSS Foundations</h1>
+        <p class="card__paragraph-info">
+        These languages are the backbone of every website, defining structure, content, and presentation.
+        </p>
+        <footer class="footer">
+          <img src="./assets/images/image-avatar.webp" 
+               alt="Avatar of Greg Hooper" 
+               class="footer__avatar-logo" />
+          <b class="footer__avatar">Greg Hooper</b>
+        </footer>
+      </article>
+    </main>
+  </body>
 </html>
