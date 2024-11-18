@@ -1,0 +1,71 @@
+.card {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 20.43rem;
+  max-width: 24rem;
+  height: 32.625rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $white;
+  box-shadow: 0.5rem 0.5rem 0 0.125rem rgba($black, 1);  
+  border: 1px solid $black;
+  margin: auto;
+  box-sizing: border-box;
+  transition: box-shadow 0.5s ease;  
+
+  &:hover {
+    animation: shadow-animation 1s forwards;  
+
+    .card__heading-primary {
+      color: $yellow;
+      transition: color 1s;
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.31rem;
+  }
+
+  &__information {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    box-sizing: content-box;
+  }
+
+  &__blog-image {
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+
+  &__learning-tag {
+    background-color: $yellow;
+    padding: 0.31rem 0.625rem;
+    border-radius: 0.31rem;
+    width: min-content;
+  }
+
+  &__paragraph-info {
+    color: $grey;
+    line-height: 150%;
+    font-size: calc(14px + (2 * ((100vw - 375px) / 649)));
+  }
+
+  &__heading-primary {
+    font-size: 1.5rem;
+  }
+
+  &:not(:hover) {
+    animation: shadow-animation-reverse 1s forwards;  
+  }
+}
+

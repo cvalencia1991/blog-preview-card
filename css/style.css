@@ -1,0 +1,124 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("../assets/fonts/Figtree-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Figtree";
+  src: url("../assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+body {
+  font-family: "Figtree", sans;
+  background-color: hsl(47, 88%, 63%);
+  height: 100vh;
+  width: 100vw;
+}
+
+@keyframes shadow-animation {
+  0% {
+    box-shadow: 0.5rem 0.5rem 0 0.125rem rgb(0, 0, 0);
+  }
+  70% {
+    box-shadow: 16px 16px 0px 2px rgba(0, 0, 0, 0.7);
+  }
+  100% {
+    box-shadow: 16px 16px 0px 2px rgb(0, 0, 0);
+  }
+}
+@keyframes shadow-animation-reverse {
+  0% {
+    box-shadow: 16px 16px 0px 2px rgb(0, 0, 0);
+  }
+  100% {
+    box-shadow: 0.5rem 0.5rem 0 0.125rem rgb(0, 0, 0);
+  }
+}
+.card {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 20.43rem;
+  max-width: 24rem;
+  height: 32.625rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0.5rem 0.5rem 0 0.125rem #121212;
+  border: 1px solid hsl(0, 0%, 7%);
+  margin: auto;
+  box-sizing: border-box;
+  transition: box-shadow 0.5s ease;
+}
+.card:hover {
+  animation: shadow-animation 1s forwards;
+}
+.card:hover .card__heading-primary {
+  color: hsl(47, 88%, 63%);
+  transition: color 1s;
+}
+.card__header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.31rem;
+}
+.card__information {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  box-sizing: content-box;
+}
+.card__blog-image {
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+.card__learning-tag {
+  background-color: hsl(47, 88%, 63%);
+  padding: 0.31rem 0.625rem;
+  border-radius: 0.31rem;
+  width: min-content;
+}
+.card__paragraph-info {
+  color: hsl(0, 0%, 50%);
+  line-height: 150%;
+  font-size: calc(14px + 2 * (100vw - 375px) / 649);
+}
+.card__heading-primary {
+  font-size: 1.5rem;
+}
+.card:not(:hover) {
+  animation: shadow-animation-reverse 1s forwards;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.footer__avatar-logo {
+  width: 32px;
+  height: 32px;
+}
+
+/*# sourceMappingURL=style.css.map */
