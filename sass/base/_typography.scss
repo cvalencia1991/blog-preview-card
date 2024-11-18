@@ -1,20 +1,20 @@
 @font-face {
   font-family: 'Figtree';
-  src: url('../assets/fonts/Figtree-Italic-VariableFont_wght.ttf') format('truetype');
-  font-weight: normal;
+  src: url('../assets/fonts/Figtree-Medium.ttf') format('truetype');
+  font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Figtree';
-  src: url('../assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
-  font-weight: bold;
+  src: url('../assets/fonts/Figtree-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
   font-style: normal;
 }
 
 
 body {
-  font-family: 'Figtree', sans;
+  font-family: 'Figtree', sans-serif;
   background-color: $yellow;
   height: 100vh;
   width: 100vw;
